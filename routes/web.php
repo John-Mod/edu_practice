@@ -65,5 +65,8 @@ Route::get('/contacts', 'InfoController@contacts');
 Route::get('/delivery', 'InfoController@delivery');
 Route::get('/payment', 'InfoController@payment');
 Route::get('/faq', 'InfoController@faq');
+Route::get('/git', function(){
+    return view('info.git')
+});
 
 Auth::routes();
